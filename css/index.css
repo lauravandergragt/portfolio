@@ -1,10 +1,15 @@
 :root {
-    --project-figcaption-background: rgba(0, 0, 0, 0.6);
-    --project-figcaption-text-color: white;
-    --slider-controls-button-background: rgba(0, 0, 0, 0.5);
-    --slider-controls-button-background-hover: rgba(0, 0, 0, 0.8);
-    --slider-controls-button-text-color: #F2EDDC;
-    /* --index-background-color: #132640; */
+    --figcaption: #F2F2F2;
+    --figcaption-color: #261711;
+
+    --widget-background: #748C6D;
+    --widget-selected: #72655F;
+    --widget-selected-text: #F2F2F2;
+    --widget-not-selected: transparent;
+
+    --headings-inner: #748C6D;
+    
+
 }
 
 h1 {
@@ -13,39 +18,101 @@ h1 {
 }
 
 
-/* body {
-    background-color: var(--index-background-color);
-} */
+
+.intro {
+    /* text-align: center; */
+    height: 50vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 3em;
+    /* height:70px; */
+}
+
+.highlight {
+    animation: cycle-fonts 4s steps(1, end) infinite;
+
+    padding: .5em .5em 0 0;
+    height: 150px;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+
+.portfolio {
+    position: relative;
+}
+
+
+/* Selectie soort project*/
+.widget {
+    width: fit-content;
+
+    background-color: var(--widget-background);
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    /* padding: .1em; */
+
+    border-radius: 30px;
+
+    margin-bottom: 1em;
+}
+
+.widget-option {
+    border: none;
+    padding: 0.5em 1em;
+
+    background-color: var(--widget-not-selected);
+
+    font-size: 1em;
+
+    font-family: "BodoniXT";
+    
+}
+
+.widget-option.selected {
+    background-color: var(--widget-selected);
+    color: var(--widget-selected-text);
+
+    border-radius: 30px;
+
+    height:fit-content;
+
+    /* padding: 1em; */
+}
 
 
 
 
 
 
-
-
-
-
-/* Algemene stijl voor de slider */
-
-
-
+/* Container van projecten */
 .project-slider {
     position: relative;
-    width: 100%;
-    height: 80vh; /* Volledige hoogte van het scherm */
+
     display: flex;
-    overflow-x: scroll; /* Horizontaal scrollen toestaan */
-    overflow-y: hidden; /* Verticaal scrollen blokkeren */
-    scroll-snap-type: x mandatory; /* Smooth scroll-effect */
-    scroll-behavior: smooth; /* Scrollen is vloeiend */
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth; 
     -webkit-overflow-scrolling: touch; /* Zorg ervoor dat het scrollen goed werkt op mobiele apparaten */
 }
 
 .project-slide {
-    flex: 0 0 100%; /* Elk project neemt 100% van de breedte in */
-    scroll-snap-align: start; /* Begint bij de rand van het scherm */
-    display: flex;
+    flex: 0 0 100%; 
+    scroll-snap-align: start; 
     align-items: center;
     justify-content: center;
     position: relative;
@@ -53,7 +120,6 @@ h1 {
 }
 
 .project-slide figure {
-    margin: 0;
     width: 100%;
     height: 100%;
     position: relative;
@@ -61,32 +127,65 @@ h1 {
 
 .project-slide img {
     width: 100%;
-    height: 100%;
+    height: 50vh;
     object-fit: cover; /* Zorgt dat de afbeelding de ruimte vult zonder vervorming */
+    border-radius: 12px;
 }
 
+
+
+
+/* Bijtekst bij ieder project */
 .project-slide figcaption {
     position: absolute;
-    bottom: 0;
-    /* left: 5%; */
-    width: 100%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    width: fit-content;
 
-    color: var(--project-figcaption-text-color);
-    background: var(--project-figcaption-background); /* Achtergrond voor betere leesbaarheid */
-    padding: 1rem 2rem;
-    /* border-radius: 8px; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 2em auto;
+
+    color: var(--figcaption-color);
+    background: var(--figcaption); /* Achtergrond voor betere leesbaarheid */
+    padding: 1em;
+    border-radius: 12px;
     text-align: left;
+
+    filter:
+    drop-shadow(0 3px 3px #3333336a);
 }
 
-.project-slide h2 {
-    font-size: 2rem;
-    font-weight: bold;
+.project-slide h3 {
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    color: var(--figcaption-color);
+    font-family: "Montella";
+
+    display: inline-block;
+    /* order:-1; */
 }
 
 .project-slide p {
     margin-top: 0.5rem;
     font-size: 1rem;
+    order: +1;
+
+    /* width: 60%; */
+
+    grid-column: 1 / 3;
+    /* grid-column-end: 3: */
+
+    color: var(--figcaption-color);
 }
+
+
+
+/* .project.slide a.hover {
+    background-color: var(--figcaption-a-hover);
+} */
+
 
 
 
@@ -94,27 +193,25 @@ h1 {
 
 /* Pas de algemene container van de scrollbar aan */
 .project-slider::-webkit-scrollbar {
-    width: 12px; /* Breedte van de verticale scrollbar */
-    height: 12px; /* Hoogte van de horizontale scrollbar */
+    width: 12px; 
+    height: 12px;
 }
 
 /* Pas de scrollbar track (achtergrond) aan */
 .project-slider::-webkit-scrollbar-track {
-    background: var(--scrollbar-track-color); /* Achtergrondkleur van de track */
+    background: var(--scrollbar-track-color); 
 }
 
 /* Pas het scrollbar duim-element (thumb) aan */
 .project-slider::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb-color); /* Kleur van de scrollbar */
-    border-radius: 6px; /* Ronde hoeken */
+    background: var(--scrollbar-thumb-color); 
+    border-radius: 6px; 
 }
 
 /* Pas de hover-stijl aan voor de scrollbar thumb */
 .project-slider::-webkit-scrollbar-thumb:hover {
-    background: var(--scrollbar-thumb-color-hover); /* Donkere kleur bij hover */
+    background: var(--scrollbar-thumb-color-hover); 
 }
-
-
 
 
 
@@ -123,91 +220,270 @@ h1 {
 
 /* Navigatieknoppen */
 .slider-controls {
-    position: absolute;
-    top: 50%;
-    width: 90%;
-    left: 5%;
-
     display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    z-index: 10;
-    pointer-events: none; /* Knoppen hinderen niet de swipe-actie */
+    justify-content:center;
 }
 
 .slider-controls button {
-    background: var(--slider-controls-button-background);
-    color: var(--slider-controls-button-text-color);
-    border: none;
-    font-size: 2rem;
     cursor: pointer;
     pointer-events: all; /* Maak knoppen klikbaar */
-    padding: 10px 20px;
+    /* padding: 10px 20px */
     border-radius: 50%;
-    transition: background 0.3s ease;
+    /* transition: background 0.3s ease; */
+
+    border: none;
+    background-color: transparent;
+
+    margin: 0 1em;
+
+    width: 4em;
+
 }
 
-.slider-controls button:hover {
-    background: var(--slider-controls-button-background-hover);
+
+
+
+
+
+
+
+/* Animatie introductie */
+.about h2 {
+    font-family: "BodoniXT";
+    font-size: 1em;
+}
+
+
+.headings-outer {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.headings-inner {
+    /* border: 0px solid #ddd; */
+    height: 40px;
+    line-height: 40px;
+    font-size: 35px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.headings-inner span {
+    position: relative;
+    color: var(--headings-inner);
+    animation: textrotating 10s ease infinite;
 }
 
 
 
 
-@media (min-width: 500px) {
-    .widget {
-        top: 5em; 
-        left: 2em; 
-        transform: translateX(0);
-        
-        padding: 1rem; 
-        border-radius: 8px; /* Ronde hoeken */
+
+
+/* Foto's about me */
+.aboutphoto {
+    margin: 2em 0 4em 0;
+    /* display: inline-grid; */
+
+    height: 35em;
+
+    animation: imagerotate 50s linear infinite;
+}
+
+.aboutphoto img {
+  width: 10em;
+  grid-area: 1/1;
+  offset: circle(180px) calc(100%*sibling-index()/sibling-count()) 0deg;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  object-fit: cover;
+
+  transform-origin: 50% 50%;
+
+  animation: imagecounterrotate 50s linear infinite;
+}
+
+
+
+
+
+
+
+/* Werkervaring en scholing */
+.about h3 {
+    font-size: 1.4em;
+}
+
+.about > p {
+    padding-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio projecten */
+.portfolioprojectcontainer h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.portfolioproject {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1em;
+
+    /* align-items: center; */
+    /* justify-content: start; */
+    /* justify-content: space-between; */
+    /* gap: 1em; */
+
+    margin: 1em 0 4em 0;
+
+    text-align: right;
+
+}
+
+.portfolioproject img {
+    /* grid-area: span 3; */
+
+    /* width: 100%; */
+    height: 100%;
+    /* order: -1; */
+    order: 2;
+
+    border-radius: 15px;
+} 
+
+.portfolioproject h3 {
+    font-size: 1.2em;
+}
+
+.portfolioproject section > * {
+    margin-bottom: .8em;
+}
+
+.portfolioproject:nth-child(2n) {
+    grid-template-columns: 1fr 1.5fr;
+
+    text-align:left;
+} 
+
+.portfolioproject:nth-child(2n) img{
+    order: -1;
+}
+
+.portfolioproject:nth-child(2n) .button-container {
+    margin: 0 auto 0 0;
+}
+
+
+@keyframes cycle-fonts {
+  0% {
+    font-family: "Montella";
+  }
+
+  25% {
+    font-family: Georgia, serif;
+  }
+
+  50% {
+    font-family: "Courier New", monospace;
+  }
+
+  75% {
+    font-family: Verdana, sans-serif;
+  }
+
+  100% {
+    font-family: Arial, sans-serif;
+  }
+}
+
+@keyframes textrotating {
+    0%,
+    100% {
+        top: 0;
     }
-    
-    /* Stijl voor de knoppen in de widget */
-    .widget-option {
-        background: var(--widget-option-background); /* Witte achtergrond */
-        color: var(--widget-option-text-color); /* Donkere tekstkleur */
-        border: none; 
-        border-radius: 4px; /* Ronde hoeken */
-        padding: 0.5rem 1rem; 
-        font-size: 1em; 
-        cursor: pointer; /* Geef een klikbare cursor */
+    20% {
+        top: 0;
     }
-
-
-
-    .project-slide figcaption {
-        position: absolute;
-        bottom: 10%;
-        left: 2em;
-
-        width: 60%;
-
-        color: var(--project-figcaption-text-color);
-        background: var(--project-figcaption-background); /* Achtergrond voor betere leesbaarheid */
-        padding: 1rem 2rem;
-        border-radius: 8px;
-        text-align: left;
+    25% {
+        top: -40px;
     }
-    
-    .project-slide h2 {
-        font-size: 2rem;
-        font-weight: bold;
+    45% {
+        top: -40px;
     }
-    
-    .project-slide p {
-        margin-top: 0.5rem;
-        font-size: 1rem;
+    50% {
+        top: -80px;
     }
-
-    .slider-controls {
-        left: 2em;
+    70% {
+        top: -80px;
     }
-
-    .slider-controls button {
-        font-size: 1.5rem;
-        padding: 8px 16px;
+    75% {
+        top: -120px;
+    }
+    95% {
+        top: -120px
     }
 }
 
+@keyframes imagerotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 90deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    75% {
+        rotate: 270deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes imagecounterrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    75% {
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

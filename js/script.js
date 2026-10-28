@@ -3,19 +3,32 @@ const buttons = document.querySelectorAll('.widget-option');
 const slides = document.querySelectorAll('.project-slide');
 let currentIndex = 0;  // Hou bij welk project momenteel zichtbaar is
 
+// function scrollToSlide(index) {
+//     const activeSlides = Array.from(slides).filter(slide => slide.classList.contains('active'));
+//     if (activeSlides.length > 0) {
+//         // Zorg ervoor dat de scroll alleen binnen de slider plaatsvindt
+//         const targetSlide = activeSlides[index % activeSlides.length];
+
+//         // Scroll naar de gewenste slide binnen de slider zonder de pagina te beïnvloeden
+//         targetSlide.scrollIntoView({
+//             behavior: 'smooth',
+//             block: 'nearest', // Zorgt ervoor dat de slide goed gepositioneerd wordt zonder te scrollen
+//             inline: 'start'   // Zorgt ervoor dat de slide aan het begin van de container komt
+//         });
+//     }
+// }
+
 function scrollToSlide(index) {
     const activeSlides = Array.from(slides).filter(slide => slide.classList.contains('active'));
-    if (activeSlides.length > 0) {
-        // Zorg ervoor dat de scroll alleen binnen de slider plaatsvindt
-        const targetSlide = activeSlides[index % activeSlides.length];
+    if (activeSlides.length === 0) return;
 
-        // Scroll naar de gewenste slide binnen de slider zonder de pagina te beïnvloeden
-        targetSlide.scrollIntoView({
-            behavior: 'smooth',
-            block: 'nearest', // Zorgt ervoor dat de slide goed gepositioneerd wordt zonder te scrollen
-            inline: 'start'   // Zorgt ervoor dat de slide aan het begin van de container komt
-        });
-    }
+    const targetSlide = activeSlides[index % activeSlides.length];
+    const container = targetSlide.parentElement; // De slider container
+
+    container.scrollTo({
+        left: targetSlide.offsetLeft,
+        behavior: 'smooth'
+    });
 }
 
 // Functie voor het toepassen van filters

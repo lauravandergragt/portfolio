@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-4100,-1)">
+        <rect id="Role" x="4100" y="1" width="2000" height="2000" style="fill:none;"/>
+        <g id="Role1" affinity:id="Role">
+            <g transform="matrix(1.317716,0,0,1.317716,-1769.912152,-307.18448)">
+                <circle cx="5213.5" cy="628.5" r="341.5" style="fill:white;fill-opacity:0;stroke:black;stroke-width:56.92px;"/>
+            </g>
+            <g transform="matrix(1.756955,0,0,1.043924,-4059.88287,890.393851)">
+                <circle cx="5213.5" cy="628.5" r="341.5" style="fill:white;fill-opacity:0;stroke:black;stroke-width:51.9px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

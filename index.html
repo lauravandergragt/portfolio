@@ -16,21 +16,10 @@
 <body>
     <header>
         <nav>
-            <a href="#">Lvdg</a>
+            <a href="#">Laura van der Gragt</a>
             <ul>
                 <li>
-                    <a href="./html/over-mij.html">Over mij</a>
-                </li>
-                <li>
-                    <button>Contact</button>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/laura-van-der-gragt/" target="_blank">LinkedIn</a>    
-                        </li>
-                        <li>
-                            <a href= "mailto: vandergragtlaura@gmail.com"> vandergragtlaura@gmail.com</a>    
-                        </li>
-                    </ul>
+                    <a href="#about">Over mij</a>
                 </li>
             </ul>   
         </nav>
@@ -38,75 +27,177 @@
 
     <main>
         <h1>Portfolio projecten van Laura van der Gragt</h1>
-        <nav class="widget">
-            <button class="widget-option" data-filter="all">Alle</button>
-            <button class="widget-option" data-filter="code">Code</button>
-            <button class="widget-option" data-filter="ux">UX</button>
-        </nav>
+
+        <section class="intro">
+            <h2>Hi! Ik ben <span class="highlight">Laura</span></h2>
+            <h3>Een UX Researcher & Designer.</h3>
+
+        
+        </section>
+        
+        <section class="portfolio">
+            <nav class="widget">
+                <button class="widget-option" data-filter="all">Alle</button>
+                <button class="widget-option" data-filter="ux">UX</button>
+                <button class="widget-option" data-filter="frontend">Frontend</button>
+            </nav>
         
             <section class="project-slider" aria-label="Portfolio projecten">
-                <article class="project-slide" data-category="code">
+                <!-- <nav class="widget">
+                    <button class="widget-option" data-filter="all">Alle</button>
+                    <button class="widget-option" data-filter="code">Code</button>
+                    <button class="widget-option" data-filter="ux">UX</button>
+                </nav> -->
+                
+                <article class="project-slide" data-category="ux">
                     <figure>
-                        <img src="./img/Bullseye/Erika-shot.png" alt="Afbeelding van VR project Bullseye">
+                        <img src="./img/sturing-1.png" alt="Afbeelding van Sturing van reizigers">
                         <figcaption>
-                            <h2>Bullseye</h2>
-                            <p>Bullseye is een VR schietspel waarin 6 targets op je af komen rennen of op je schieten die jij vervolgens eerst neer moet schieten.</p>
+                            <h3>Sturing van reizigers</h2>
+                            <p>Een concept waarin projecties worden gebruikt om reizigers van de geleidelijnen te laten stappen voor visueel beperkte reizigers.</p>
 
-                            <a href="./html/bullseye.html" class="button-container">Case study</a>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="project-slide" data-category="code">
-                    <figure>
-                        <img src="./img/ocearch-banner.webp" alt="Afbeelding van VR project 2">
-                        <figcaption>
-                            <h2>Ocearch</h2>
-                            <p>Ocearch is een semantisch nagebouwde website die goed door een screenreader gelezen kan worden.</p>
-
-                            <a href="./html/ocearch.html" class="button-container">Case study</a>
+                            <a href="./html/sturing.html" class="button-container">Case study</a>
                         </figcaption>
                     </figure>
                 </article>
 
                 <article class="project-slide" data-category="ux">
                     <figure>
-                        <img src="./img/vierstapsverdieping.webp" alt="Afbeelding van de vierstapsverdieping">
+                        <img src="./img/berrypicking-2.png" alt="Afbeelding van Mario platformer game">
                         <figcaption>
-                            <h2>De vierstapsverdieping</h2>
-                            <p>Een creatieve onderzoeksmethode voor het vooronderzoek voor mijn afstuderen.</p>
+                            <h3>Berry picking in VR</h2>
+                            <p>Een meertalige, laaggeletterde trainingsmodule voor seizoensplukkers.</p>
 
-                            <a href="./html/vierstapsverdieping.html" class="button-container">Case study</a>
+                            <a href="./html/berrypicking.html" class="button-container">Case study</a>
                         </figcaption>
                     </figure>
                 </article>
 
-                <!-- <article class="project-slide" data-category="code">
+                <article class="project-slide" data-category="frontend">
                     <figure>
-                        <img src="./img/Placeholder-4.avif" alt="Afbeelding van Mario platformer game">
+                        <img src="./img/Bullseye/Erika-shot.png" alt="Afbeelding van VR project Bullseye">
                         <figcaption>
-                            <h2>Mario platformer</h2>
-                            <p>Beschrijving van mario.</p>
+                            <h3>Bullseye</h2>
+                            <p>Bullseye is een VR schietspel waarin 6 targets op je af komen rennen of op je schieten die jij vervolgens eerst neer moet schieten.</p>
 
-                            <a href="./html/mario.html" class="button-container">Case study</a>
+                            <a href="./html/bullseye.html" class="button-container">Case study</a>
                         </figcaption>
                     </figure>
-                </article> -->
+                </article>
             </section>
 
         
-        <!-- Knoppen -->
-        <nav class="slider-controls" aria-label="Navigatie">
-            <button class="prev" aria-label="Vorige project">&#10094;</button>
-            <button class="next" aria-label="Volgende project">&#10095;</button>
-        </nav>
+            <!-- Knoppen -->
+            <nav class="slider-controls" aria-label="Navigatie">
+                <button class="prev" aria-label="Vorige project">
+                    <img src="./img/icons-2026/arrow-left.svg" alt="Icoon naar links">
+                </button>
+                <button class="next" aria-label="Volgende project">
+                    <img src="./img/icons-2026/arrow-right.svg" alt="Icoon naar rechts">
+                </button>
+            </nav>
+        </section>
+        
+        <section class="about"  id="about">
+            <setion class="headings-outer">
+                <h2>
+                Ik ben een...
+                    <div class="headings-inner">
+                        <span>
+                            UI/UX Designer <br />
+                            UI/UX Researcher <br />
+                            Accessibility Designer <br />
+                            Immersive Designer <br />
+                            Front-end Developer <br />
+                        </span>
+                    </div>
+                </h2>
+            </setion>
+
+            <p>Blabla</p>
+            
+            
+            <section class="aboutphoto">
+                <img src="./img/about-photos/6R4A8040 2.JPG" alt="">
+                <img src="./img/about-photos/4676ab21-da61-4641-99f3-21b4b6122772.JPG" alt="">
+                <img src="./img/about-photos/6R4A8093 2.JPG" alt="">
+                <img src="./img/about-photos/IMG_2892.jpeg" alt="">
+                <img src="./img/about-photos/6R4A8136 2.JPG" alt="">
+                <img src="./img/about-photos/IMG_2188.jpeg" alt="">
+            </section>
+
+            <section>
+                <h3>Werkervaring</h3>
+                <ul class="ervaring-grid">
+                    <li>
+                        <h4>Concept Designer</h4>
+                        <img src="img/icons-2026/vr.svg" alt="Icoon van een VR-bril">
+                        <p>VR Owl - Stage
+                        Sept. 2025 - jan. 2026</p>
+                    </li>
+                    <li>
+                        <h4>Accessibility Research</h4>
+                        <img src="img/icons-2026/interview.svg" alt="Icoon van een vergrootglas">
+                        <p>Koninklijke Visio - Stage
+                        Feb. 2024 - apr. 2024</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Scholing</h3>
+                <ul class="ervaring-grid">
+                    <li>
+                        <h4>Communication and Multimedia Design</h4>
+                        <img src="img/icons-2026/scholing.svg" alt="Icoon van een afstudeerhoed">
+                        <p>Hogeschool van Amsterdam
+                        2022-2026</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="portfolioprojectcontainer">
+            <h2>Portfolio</h2>
+
+            <section class="portfolioproject">
+                <img src="./img/sturing-1.png" alt="">
+                <section>
+                    <h3>Sturing van Reizigers</h3>
+                    <p>Het vrijhouden van de geleidelijnen op treinstations voor blinde en slechtziende reizigers</p>
+                    <a href="./html/sturing.html" class="button-container">Case study</a>
+                </section>
+                
+            </section>
+
+            <section class="portfolioproject">
+                <img src="./img/berrypicking-2.png" alt="">
+                <section>
+                    <h3>Berry Picking</h3>
+                    <p>Een meertalige, laaggeletterde trainingsmodule voor seizoensplukkers.</p>
+                    <a href="./html/berrypicking.html" class="button-container">Case study</a>
+                </section>
+                
+            </section>
+
+            <section class="portfolioproject">
+                <img src="./img/Bullseye/Erika-shot.png" alt="">
+                <section>
+                    <h3>Bullseye</h3>
+                    <p>#s</p>
+                    <a href="./html/bullseye.html" class="button-container">Case study</a>
+                </section>
+                
+            </section>
+
+        </section>
          
     </main>
 
     <footer>
         <h2>Laura van der Gragt</h2>
         <!-- <h3>Socials</h3> -->
-        <p>Neem contact met mij op via <a href= "mailto: vandergragtlaura@gmail.com"> vandergragtlaura@gmail.com</a> of mijn <a href="https://www.linkedin.com/in/laura-van-der-gragt/" target="_blank">LinkedIn</a>.</p>
+        <p>Ik ben te bereiken via <a href= "mailto: vandergragtlaura@gmail.com"> vandergragtlaura@gmail.com</a>, of <a href="https://www.linkedin.com/in/laura-van-der-gragt/" target="_blank">LinkedIn</a>.</p>
     </footer>
 
     <script src="./js/script.js"></script>
