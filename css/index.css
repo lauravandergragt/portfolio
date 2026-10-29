@@ -297,7 +297,7 @@ h4 {
 .aboutphoto img {
   width: 4em;
   grid-area: 1/1;
-  offset: circle(180px) calc(100%*sibling-index()/sibling-count()) 0deg;
+  offset: circle(8em) calc(100%*sibling-index()/sibling-count()) 0deg;
   aspect-ratio: 1;
   border-radius: 50%;
   box-sizing: border-box;
