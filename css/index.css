@@ -287,7 +287,7 @@ h4 {
     margin: 2em 0 4em 0;
     /* display: inline-grid; */
 
-    height: 20em;
+    height: 60vh;
 
     animation: imagerotate 50s linear infinite;
 
@@ -297,7 +297,7 @@ h4 {
 .aboutphoto img {
   width: 20%;
   grid-area: 1/1;
-  offset: circle(40%) calc(100%*sibling-index()/sibling-count()) 0deg;
+  offset: circle(20%) calc(100%*sibling-index()/sibling-count()) 0deg;
   aspect-ratio: 1;
   border-radius: 50%;
   box-sizing: border-box;
