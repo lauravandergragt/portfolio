@@ -290,10 +290,12 @@ h4 {
     height: 35em;
 
     animation: imagerotate 50s linear infinite;
+
+    width: 100%;
 }
 
 .aboutphoto img {
-  width: 10em;
+  width: 7em;
   grid-area: 1/1;
   offset: circle(180px) calc(100%*sibling-index()/sibling-count()) 0deg;
   aspect-ratio: 1;
