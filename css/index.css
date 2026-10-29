@@ -284,18 +284,22 @@ h4 {
 
 /* Foto's about me */
 .aboutphoto {
-    margin: 2em 0 4em 0;
+    /* margin: 2em 0 4em 0; */
     /* display: inline-grid; */
 
-    height: 60vh;
+    /* height: 60vh; */
+
+    display: absolute;
 
     animation: imagerotate 50s linear infinite;
 
     width: 100%;
+    
+    scr
 }
 
 .aboutphoto img {
-  width: 20%;
+  width: 20vh;
   grid-area: 1/1;
   offset: circle(20%) calc(100%*sibling-index()/sibling-count()) 0deg;
   aspect-ratio: 1;
