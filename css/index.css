@@ -287,20 +287,26 @@ h4 {
     /* margin: 2em 0 4em 0; */
     display: inline-grid;
 
+    justify-content: center;
+
     /* height: 60vh; */
+
+    /* margin: 0 auto; */
 
 
     animation: imagerotate 50s linear infinite;
 
-    width: 50vh;
-    height: 50vh;
+    width: 30em;
+    height: 30em;
+
+    overflow: hidden;
     
 }
 
 .aboutphoto img {
   width: 10vh;
   grid-area: 1/1;
-  offset: circle(20%) calc(100%*sibling-index()/sibling-count()) 0deg;
+  offset: circle(30%) calc(100%*sibling-index()/sibling-count()) 0deg;
   aspect-ratio: 1;
   border-radius: 50%;
   box-sizing: border-box;
