@@ -7,7 +7,7 @@ main section:first-of-type img {
 
     object-fit: cover;
 
-    margin: 2em 0;
+    /* margin: 2em 0; */
 
     border-radius: 12px;
 }
@@ -15,6 +15,22 @@ main section:first-of-type img {
 h1 {
     font-family: "Montella";
 }
+
+h1, h2, h3, h4, h5 {
+    margin: 1em 0;
+}
+
+
+
+main > section:not(:first-of-type) {
+    padding: 1em 0 1em 0;
+}
+
+main section img {
+    border-radius: 12px;
+}
+
+
 
 
 /* Statistieken grids */
@@ -50,10 +66,71 @@ main > ul:nth-of-type(2) {
     padding: 2em 0;
 }
 
-main > section:not(:first-of-type) {
-    padding: 1em 0 1em 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.storyboard > li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding-bottom: 1em;
+    
+    /* border-bottom: 1px solid white; */
+
+     margin-top: 1em;  
 }
 
-main section img {
-    border-radius: 12px;
+.storyboard > li:not(:first-of-type) {
+    margin-top: 3em;  
+}
+
+.storyboard > li p {
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.storyboard > li img {
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.storyboard > li:nth-of-type(even) {
+    padding: 3em;
+
+    background-color: var(--ervaring-background);
+    /* width: 100%; */
+    border-radius: 20px;
+}
+
+
+.storyboard > li:nth-of-type(even) p {
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+
+.storyboard > li:nth-of-type(even) img{
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.storyboard-ul { 
+    grid-area: 2 / 1 / 3 / 3; 
+
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em; */
+
+    list-style: circle;
 }

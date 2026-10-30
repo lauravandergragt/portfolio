@@ -63,8 +63,10 @@ h1, h2, h3, h4, p {
     font-weight:lighter;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "Montella";
+
+    /* margin: 1em 0; */
 }
 
 p {
@@ -116,9 +118,6 @@ header nav ul a, header nav button {
     color: var(--header-hover-color-text); 
 } */
 
-main > section {
-    margin-top: 4em;
-}
 
 
 .highlight {
@@ -206,6 +205,16 @@ main > section {
     filter: invert();
 }
 
+
+
+
+blockquote {
+    border-left: 2px solid var(--highlight);
+    padding-left: 1em;
+    margin: 1em 0;
+
+    font-style: italic;
+}
 
 
 
