@@ -18,18 +18,7 @@
             <a href="../index.html">Laura van der Gragt</a>
             <ul>
                 <li>
-                    <a href="./over-mij.html">Over mij</a>
-                </li>
-                <li>
-                    <button>Contact</button>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/laura-van-der-gragt/" target="_blank">LinkedIn</a>    
-                        </li>
-                        <li>
-                            <a href= "mailto: vandergragtlaura@gmail.com"> vandergragtlaura@gmail.com</a>    
-                        </li>
-                    </ul>
+                    <a href="../index.html#about">Over mij</a>
                 </li>
             </ul>   
         </nav>
@@ -47,95 +36,117 @@
         <!-- Informatie case zoals tijd, wanneer en welke rol -->
         <ul>
             <li>
-                <img src="../img/iconen-versie2/Klok.svg" alt="klok icoon">
+                <img src="../img/icons-2026/clock.svg" alt="klok icoon">
                 <p>September 2025 - januari 2026</p>
             </li>
             <li>
-                <img src="../img/iconen-versie2/Kalender.svg" alt="kalender icoon">
+                <img src="../img/icons-2026/calendar.svg" alt="kalender icoon">
                 <p>~ 10 weken</p>
             </li>
             <li>
-                <img src="../img/iconen-versie2/Persoon.svg" alt="persoon icoon">
+                <img src="../img/icons-2026/role.svg" alt="persoon icoon">
                 <p>Concepter bij VR Owl</p>
             </li>
         </ul>
 
         <section>
             <h3>Context</h3>
-            <!-- <button>&#10095;</button> -->
 
-            <section>
-                <p>De klant is een familiebedrijf gespecialiseerd in de ontwikkeling en verkoop van fruit. In de zomer hebben ze seizoensplukkers die getraind worden in rijpheidsherkenning, het voorzichtig losmaken van bessen, een efficiënte plukflow, het correct hanteren van de bessen en hygiene. Deze plukkers zijn laaggeletterd.</p>
-                <p>De klant vroeg voor een meertalige, laaggeletterde trainingsmodule waar prestatie-indicatoren bijgehouden worden. </p>
-            </section>
-                 
+            <p>De klant is een familiebedrijf gespecialiseerd in de ontwikkeling en verkoop van fruit. In de zomer hebben ze seizoensplukkers die getraind worden in rijpheidsherkenning, het voorzichtig losmaken van bessen, een efficiënte plukflow, het correct hanteren van de bessen en hygiene. Deze training duurt echter lang en wilt de klant efficiënter maken door middel van een VR-training.</p>
+            <p>De klant vroeg voor een meertalige, laaggeletterde trainingsmodule waar prestatie-indicatoren bijgehouden worden. </p>           
         </section>
 
         <section>
-            <h3>Het doel</h3>
-            <!-- <button>&#10095;</button> -->
+            <h3>De belangrijkste uitdagingen</h3>
 
-            <section>
-                 <p>De trainingstijd digitaliseren en verkorten.</p> 
-            </section>
+            <ul>
+                <li>
+                    <p>De doelgroep spreekt verschillende talen (waaronder Arabisch en Tamazight) en heeft wisselende niveaus van geletterdheid. </p>
+                </li>
+                <li>
+                    <p>De plukkers hebben weinig tot geen ervaring met Virtual Reality.</p>
+                </li>
+            </ul>
 
         </section>
 
         <section>
-            <h3>Key decisions</h3>
-            <!-- <button>&#10095;</button> -->
+            <h3>Randvoorwaarden</h3>
 
-            <section>
-                <p>Uitleg</p>
-
-                <ul>
-                    <li>
-                        <p>Focus op iconen en voice-overs met ondersteunende tekst vanwege laaggeletterdheid.</p>
-                    </li>
-                    <li>
-                        <p>De flow van de training moet de vooruitgang van de prestatie-indicatoren weergeven. </p> 
-                    </li>
-                    <li>
-                        <p>De controllers geven haptische feedback over de staat van het bessen plukken.</p>
-                    </li>
-                </ul>
+            <ul>
+                <li>
+                    <p>Vanwege complexiteit moeten interacties (plukken, sorteren, UI) met slechts één knop worden uitgevoerd: de trigger-knop.</p>
+                </li>
+                <li>
+                    <p>De training moet leunen op voice-overs, duidelijke pictogrammen en intuïtieve visualisaties.</p> 
+                </li>
+                <li>
+                    <p>Om fysieke veiligheid te garanderen en motion sickness te voorkomen, moet de gebruiker op één vaste plek blijven staan. De interactieve objecten bevinden zich in armlengte.</p>
+                </li>
+                <li>
+                    <p>De training moet snel op te starten zijn via Plug-and-Play.</p>
+                </li>
+                <li>
+                    <p>De flow van de training moet de vooruitgang van de prestatie-indicatoren weergeven.</p>
+                </li>
+            </ul>
                 
-                <video width="320" height="240" controls>
-                    <source src="#" type="video/mp4">
-                    Je browser ondersteunt geen video.
-                </video>
-            </section>
-
         </section>
 
-        <!-- Hoe veel interviews, tests/testpersonen etc. -->
-        <!-- <ul>
-            <li>
-                <img src="../img/iconen-versie2/Testpersonen-2.svg" alt="Testpersonen icoon">
-                <p>Testpersonen</p>
-            </li> 
-            <li>
-                <img src="../img/iconen-versie2/Onderzoek-vergrootglas.svg" alt="Vergrootglas icoon">
-                <p>Interviews</p>
-            </li> 
-        </ul> -->
 
         <section>
-            <h3>Resultaat</h3>
-            <!-- <button>&#10095;</button> -->
+            <h3>Ontwerpbeslissingen</h3>
 
-            <section>
-                <p>Resultaat</p>
-                
-                <video width="320" height="240" controls>
-                    <source src="#" type="video/mp4">
-                    Je browser ondersteunt geen video.
-                </video> 
-            </section>
+            <p>De belangrijkste ontwerp uitdaging was het simuleren van gevoel in een VR-omgeving om te voorkomen dat het besje geplet wordt. Hiervoor hebben we drukfases bedacht.</p>
+            
+            <ul>
+                <li>
+                    <p>Het &#8531; indrukken van de trigger-knop op de controller: Geen actie</p>
+                </li>
+                <li>
+                    <p>Het &#8532; indrukken van de trigger-knop op de controller: De 'sweet spot'. De controller geeft een subtiele trilling (haptische feedback) om aan te geven dat de bes vastgepakt is. Na kort vasthouden is de bes geplukt.</p>           
+                </li>
+                <li>
+                    <p>Het 100% indrukken van de trigger-knop op de controller: De bes wordt geplet. (Visuele splash + geluid)</p>
+                </li>
+            </ul>
+            
+            <img src="../img/berrypicking/drukfases.png" alt="De drukfases visueel weergeven">
+        </section>
+
+        <section>
+            <h3>Inclusief ontwerp</h3>
+            <p>Gebruikers kiezen aan het begin hun taal via een vlag-icoon (Engels, Arabisch, Tamazight). Alle instructies en feedback worden voorgelezen. Verder kan elke voice-over  opnieuw beluisterd worden via het koptelefoon-icoon Tijdens de training veranderen de controllers in 3D-handen. In de menu’s zijn deze getoond als controllers met een richtstraal.</p>
+
+            <img src="../img/berrypicking/taalselector.png" alt="Beginpagina van de training, waar de gebruiker kan kiezen tussen talen met een instructievideo rechts.">
+        </section>
+
+        <section>
+            <h3>Gamification</h3>
+            <p>De training is opgedeeld in twee modules die samenkomen in een examen.</p>
+            <p><i>Module 1</i> gaat over de rijpheidbeoordeling. Er zijn drie fases: onrijp, rijp en overrijp. Rijpe bessen gaan in de groene emmer (rechts), overrijpe bessen in de blauwe emmer (links), onrijpe bessen blijven aan de struik hangen. Als feedback komt er direct een visueel symbool boven de emmer/struik met geluid.</p>
+            <p><i>Module 2</i> focust op de geleidelijke druk op de trigger om geplette bessen te voorkomen.</p>
+            <p>De <i>Examenfase</I> combineert de geleerde skills onder tijdsdruk.</p>
+
+            <p>Achteraf krijgt de gebruiker een reflectiescherm te zijn met de score-visualisatie. Pas als ze een score boven 80% hebben behaald, mogen ze het veld op.</p>
+
+            <img src="../img/berrypicking/moduleselector.png" alt="De UI van de module selector. Er zijn afbeeldingen te zien van iedere module. De middelste is geselecteerd.">
+        </section>
+
+        <section>
+            <h3>Behaalde UX-doelen</h3>
+            <ul>
+                <li>
+                    <p>Dankzij het gebruik van één knop kan de doelgroep zonder enige VR-ervaring aan de slag.</p>
+                </li>
+                <li>
+                    <p>Door de combinatie van audio, pictogrammen en haptiek is de training taal-onafhankelijk.</p>
+                </li>
+            </ul>
         </section>
     </main>
 
-    <a href="#" class="button-container">Volgend project &#10095;</a>
+    <a href="./bullseye.html" class="button-container">Zie meer projecten &#10095;</a>
 
     <footer>
         <h2>Laura van der Gragt</h2>

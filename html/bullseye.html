@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="../img/iconen-versie2/Logo.svg">
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="referrer" content="origin" /> -->
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <a href="../index.html">Laura van der Gragt</a>
             <ul>
                 <li>
-                    <a href="./over-mij.html">Over mij</a>
+                    <a href="../index.html#about">Over mij</a>
                 </li>
             </ul>   
         </nav>
@@ -31,7 +32,7 @@
             <h1>Bullseye</h1>
         </section>
 
-        <h2></h2>
+        <h2>Een VR-schiettraining: Hunger Games-style.</h2>
 
         <!-- Informatie case zoals tijd, wanneer en welke rol -->
         <ul>
@@ -49,9 +50,79 @@
             </li>
         </ul>
 
+        <section>
+            <h3>Context</h3>
+
+            <p>Bullseye is een VR-schietspel waarin de speler het opneemt tegen verschillende soorten targets die vanuit de omgeving op ze af komen. Het project is ontworpen als passieproject binnen de minor <i>Immersive Environments</i>. </p>
+            <p>Met nul ervaring in Unity en C# (wel met voorkennis in JavaScript) was het doel om een game te leveren die technisch werkt in Virtual Reality, te begrijpen is voor spelers met weinig VR-ervaring en herspeelbaar is. </p>
+        </section>
+
+        <section>
+            <h3>Ontwerpkeuzes</h3>
+
+            <p>Er zijn drie kernacties in het spel:</p>
+            <ul>
+                <li>
+                    <p>Het wapen oppakken.</p>
+                </li>
+                <li>
+                    <p>Schieten met de trigger-knop.</p>
+                </li>
+                <li>
+                    <p>Pauzeren met de X-knop (op de Meta Quest 2).</p>
+                </li>
+            </ul>
+
+            <p>Een speelronde duurt maximaal twee minuten, wat goed werkt voor snelle opeenvolgende pogingen. </p>
+        </section>
+
+        <!-- Hoe veel interviews, tests/testpersonen etc. -->
+        <ul>
+            <li>
+                <img src="../img/icons-2026/testpersonen.svg" alt="Testpersonen icoon">
+                <p>8 testpersonen in de prototype fase</p>
+            </li> 
+            <li>
+                <img src="../img/icons-2026/interview.svg" alt="Vergrootglas icoon">
+                <p>20+ spelers van het eindproduct</p>
+            </li> 
+        </ul>
+
+        <section>
+            <h3>Iteratief testen</h3>
+
+            <p>In de vroege tests bleek dat de virtuele ruimte te klein aanvoelde, waardoor de targets te snel op de speler afkwamen. Ook waren de spelers verward over of ze gewonnen of verloren hadden.</p>
+            <p>Dit leidde tot het inzetten van audio-cues en gedragsdiversiteit van targets. Elk succesvol schot geeft direct auditieve bevestiging en zijn er duidelijke geluidseffecten en UI-schermen toegevoegd voor winst en verlies. </p>
+            <p>Om te zorgen dat het spel spannend blijft, heeft ieder target een uniek gedrag. Sommige rennen snel, een ander schiet pijlen. Specifieke karakters voeren eerst een animatie uit, zoals van een verdieping afspringen. </p>
+        </section>
+
+        <section>
+            <h3>Development</h3>
+
+            <p>Het spel bevat 6 actieve targets (plus een tutorial-target genaamd Roberto). Om ervoor te zorgen dat geen enkele sessie identiek is, krijgen de targets een startvertraging toegewezen uit een willekeurige lijst met delays. Zodra de vertraging voorbij is, wordt de mesh van het target zichtbaar en begint de bewegingslogica.</p>
+            <p>Zodra een target of een pijl de speler raakt, worden de targets vernietigd en verschijnt er een verlies-UI. Als de speler alle targets heeft uitgeschakeld, wordt de win-UI geactiveerd.</p>
+        </section>
+
+        <section>
+            <h3>Resultaat</h3>
+            <p>Het resultaat is een kort VR-schietspel die door grote groepen mensen in een korte tijd achter elkaar gespeeld kan worden. Tijdens de eindexpositie van de minor werd het spel vrijwel continu gespeeld.</p>
+        </section>
+
+
+        <iframe width="420" height="315"
+            src="https://youtube.com/embed/7x9FGf6Fqbs?si=flnRNAUjsS8dO03P">
+        </iframe>
+
     </main>
 
+    <a href="./sturing.html" class="button-container">Zie meer projecten &#10095;</a>
+
+    <footer>
+        <h2>Laura van der Gragt</h2>
+        <p>Neem contact met mij op via <a href= "mailto: vandergragtlaura@gmail.com">vandergragtlaura@gmail.com</a> of mijn <a href="https://www.linkedin.com/in/laura-van-der-gragt/" target="_blank">LinkedIn</a>.</p>
+    </footer>
+<!-- 
     <script src="../js/projecten.js"></script>
     <script src="../js/code-projecten.js"></script>
-    <script src="../js/contact.js"></script>
+    <script src="../js/contact.js"></script> -->
 </body>
