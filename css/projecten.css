@@ -21,12 +21,25 @@ main section:first-of-type img {
     border-radius: 12px;
 }
 
-h1 {
-    font-family: "Montella";
-}
 
 h1, h2, h3, h4, h5 {
     margin: 1em 0;
+}
+
+
+
+h1 {
+    font-family: "Montella";
+    text-align: center;
+}
+
+h3 {
+    font-size: 35px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 25px;
 }
 
 
@@ -87,10 +100,9 @@ li:not(.storyboard > li, main > ul:first-of-type li, main > ul:nth-of-type(2) li
 }
 
 
-li p:not(.storyboard > li p, main > ul:first-of-type li p, main > ul:nth-of-type(2) li p) {
-    /* text-align: center; */
+/* li p:not(.storyboard > li p, main > ul:first-of-type li p, main > ul:nth-of-type(2) li p) {
     padding: .5em 1em;
-}
+} */
 
 
 
@@ -123,7 +135,7 @@ iframe {
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1100px) {
     .storyboard > li {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
