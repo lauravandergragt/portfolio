@@ -78,7 +78,7 @@ section h2, section p {
     /* left: 5%; */
     width: 100%;
 
-    color: var(--project-figcaption-text-color);
+    /* color: var(--project-figcaption-text-color); */
     background: var(--project-figcaption-background); /* Achtergrond voor betere leesbaarheid */
     padding: 1rem 2rem;
     /* border-radius: 8px; */
