@@ -12,6 +12,42 @@
 
 }
 
+/* cycle fonts  */
+
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/rotatingtext/against\ regular.ttf);
+}
+
+@font-face {
+    font-family: "font2";
+    src: url(../fonts/rotatingtext/Makcasa-Regular.ttf);
+}
+
+@font-face {
+    font-family: "font3";
+    src: url(../fonts/rotatingtext/Vogue-Regular.otf);
+}
+
+@font-face {
+    font-family: "font4";
+    src: url(../fonts/rotatingtext/Recoleta-RegularDEMO.otf);
+}
+
+@font-face {
+    font-family: "font5";
+    src: url(../fonts/rotatingtext/Relationship\ of\ mÇlodrame.ttf);
+}
+
+
+
+
+
+
+
+
+
+
 h1 {
     position: absolute;
     left: -100em;
@@ -408,7 +444,7 @@ main > section {
         animation: imagerotate 50s linear infinite;
     }
     .aboutphoto img {
-        
+        width: 10em;
         animation: imagecounterrotate 50s linear infinite;
     }
 }
@@ -416,27 +452,25 @@ main > section {
 
 
 
-
-
 @keyframes cycle-fonts {
   0% {
-    font-family: "Montella";
+    font-family: 'Gill Sans MT';
   }
 
   25% {
-    font-family: Georgia, serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   50% {
-    font-family: "Courier New", monospace;
+    font-family: Georgia;
   }
 
   75% {
-    font-family: Verdana, sans-serif;
+    font-family: 'Trebuchet MS';
   }
 
   100% {
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
 
