@@ -30,16 +30,20 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-family: "Montella";
-    text-align: center;
+    /* text-align: center; */
 }
 
 h3 {
     font-size: 35px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h4 {
     font-size: 25px;
+}
+
+p {
+    text-align: justify;
 }
 
 
@@ -65,6 +69,10 @@ main > ul:first-of-type {
     padding: 2em 0;
 }
 
+main > ul:first-of-type p{
+    text-align: center;
+}
+
 main > ul:first-of-type li, main > ul:nth-of-type(2) li {
     display: flex;
     flex-direction: column;
@@ -88,6 +96,10 @@ main > ul:nth-of-type(2) {
     padding: 2em 0;
 }
 
+main > ul:nth-of-type(2) p {
+    text-align: center;
+}
+
 
 
 
@@ -104,7 +116,9 @@ li:not(.storyboard > li, main > ul:first-of-type li, main > ul:nth-of-type(2) li
     padding: .5em 1em;
 } */
 
-
+.storyboard {
+    list-style-position: inside;
+}
 
 .storyboard > li {
     display: flex;
@@ -116,6 +130,7 @@ li:not(.storyboard > li, main > ul:first-of-type li, main > ul:nth-of-type(2) li
 
     margin-top: 3em;  
 }
+
 .storyboard > li:first-of-type {
     margin-top: 1em;
 }
@@ -124,7 +139,9 @@ li:not(.storyboard > li, main > ul:first-of-type li, main > ul:nth-of-type(2) li
     width: 100%;
 }
 
-
+.storyboard-ul li{
+    list-style: circle;
+}
 
 
 iframe {
@@ -136,6 +153,10 @@ iframe {
 
 
 @media screen and (min-width: 1100px) {
+    h1, h3 {
+        text-align: center;
+    }
+
     .storyboard > li {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -161,13 +182,13 @@ iframe {
         grid-area: 1 / 2 / 2 / 3; 
     }
 
-    .storyboard > li:nth-of-type(even) {
+    /* .storyboard > li:nth-of-type(even) {
         padding: 3em;
 
         background-color: var(--ervaring-background);
-        /* width: 100%; */
+        width: 100%;
         border-radius: 20px;
-    }
+    } */
 
 
     .storyboard > li:nth-of-type(even) p {
@@ -186,8 +207,6 @@ iframe {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 1em;
         grid-row-gap: 1em; */
-
-        list-style: circle;
     }
 
 }
