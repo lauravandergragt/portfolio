@@ -55,6 +55,7 @@ h1 {
 
 
 
+
 .intro {
     /* text-align: center; */
     height: 50vh;
@@ -64,9 +65,13 @@ h1 {
     flex-direction: column;
 }
 
-h2 {
-    font-size: 3em;
-    /* height:70px; */
+
+.intro h2 {
+    font-size: 50px;
+}
+
+.intro h3 {
+    font-size: 30px;
 }
 
 .highlight {
@@ -76,10 +81,6 @@ h2 {
     height: 150px;
 }
 
-h3 {
-    font-size: 2em;
-}
-
 h4 {
     font-size: 1.5em;
 }
@@ -87,6 +88,10 @@ h4 {
 
 main > section {
     margin-top: 4em;
+}
+
+.intro h2, .intro h3 {
+    font-family: "BodoniXT";
 }
 
 
@@ -199,7 +204,7 @@ main > section {
 }
 
 .project-slide h3 {
-    font-size: 1.5em;
+    font-size: 20px;
     /* font-weight: bold; */
     color: var(--figcaption-color);
     font-family: "Montella";
@@ -219,6 +224,8 @@ main > section {
     /* grid-column-end: 3: */
 
     color: var(--figcaption-color);
+
+    font-size: 18px;
 }
 
 
@@ -388,16 +395,48 @@ main > section {
 .portfolioproject {
     display: flex;
     flex-direction: column;
+
+    margin-top: 1em;
 }
 
 .portfolioproject img {
     border-radius: 15px;
+
+    height: 30vh;
+
+    margin: 1em 0;
+    
+}
+
+.portfolioproject h3 {
+    font-size: 1.5em;
+
+}
+
+.portfolioproject .button-container {
+    /* display: block; */
+    padding: .5em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-size: 15px;
 }
 
 
 
 
 @media screen and (min-width: 1100px) {
+    .project-slide h3 {
+        font-size: 25px;
+    }
+    
+    .project-slide p {
+        font-size: 20px;
+    }
+
+
+
+
     .aboutphoto {
         height: 90vh;
         animation: imagerotate 50s linear infinite;
@@ -421,10 +460,12 @@ main > section {
     .portfolioproject img {
         height: 100%;
         order: 2;
+
+        margin: 0;
     } 
 
     .portfolioproject h3 {
-        font-size: 1.2em;
+        font-size: 2em;
     }
 
     .portfolioproject section > * {

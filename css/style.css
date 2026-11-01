@@ -145,9 +145,6 @@ header nav ul a, header nav button {
     color: var(--highlight);
 } 
 
-.intro h2, .intro h3 {
-    font-family: "BodoniXT";
-}
 
 
 /* Case study knop */
