@@ -1,14 +1,6 @@
 
 /* Banner foto */
 
-/* body {
-    width: 100%;
-}
-
-main section {
-    width: 85%;
-    margin: 0 auto;
-} */
 
 main section:first-of-type img {
     width: 100%;
@@ -106,18 +98,62 @@ main > ul:nth-of-type(2) p {
 
 
 
-
-li:not(.storyboard > li, main > ul:first-of-type li, main > ul:nth-of-type(2) li) {
+.ul-nummer {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.nummer, .bulletpoints .nummer, .storyboard-ul .nummer {
+    font-size: 30px;
+    font-weight:bold;
 }
 
 
-/* li p:not(.storyboard > li p, main > ul:first-of-type li p, main > ul:nth-of-type(2) li p) {
-    padding: .5em 1em;
-} */
+
+
+.bulletpoints {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    list-style: none;
+}
+
+.bulletpoints li {
+    /* border: 2px solid var(--highlight); */
+
+    background-color: var(--highlight);
+
+    border-radius: 12px;
+    padding: 2em;
+}
+
+
+.bulletpoints li p {
+
+    /* color: black; */
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .storyboard {
-    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
 .storyboard > li {
@@ -127,8 +163,6 @@ li:not(.storyboard > li, main > ul:first-of-type li, main > ul:nth-of-type(2) li
     
     
     /* border-bottom: 1px solid white; */
-
-    margin-top: 3em;  
 }
 
 .storyboard > li:first-of-type {
@@ -139,9 +173,24 @@ li:not(.storyboard > li, main > ul:first-of-type li, main > ul:nth-of-type(2) li
     width: 100%;
 }
 
-.storyboard-ul li{
-    list-style: circle;
+.storyboard-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
+
+.storyboard-ul li{
+    list-style: none;
+}
+
+
+/* li{
+    list-style: circle;
+} */
+
+
+
+
 
 
 iframe {
@@ -162,10 +211,24 @@ footer p {
         text-align: center;
     }
 
+
+
+    .bulletpoints {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 1em;
+
+    }
+
+
+
+    
+
     .storyboard > li {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: auto;
         grid-column-gap: 1em;
         grid-row-gap: 1em;
         padding-bottom: 1em;
