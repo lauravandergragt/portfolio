@@ -60,20 +60,25 @@
         <section>
             <h3>Ontwerpkeuzes</h3>
 
+            <p>Een speelronde duurt maximaal twee minuten, wat goed werkt voor snelle opeenvolgende pogingen. </p>
+            <br>
             <p>Er zijn drie kernacties in het spel:</p>
-            <ul>
+            <br>
+            <ul class="ul-nummer">
                 <li>
+                    <p class="nummer">01</p>
                     <p>Het wapen oppakken.</p>
                 </li>
                 <li>
+                    <p class="nummer">02</p>
                     <p>Schieten met de trigger-knop.</p>
                 </li>
                 <li>
+                    <p class="nummer">03</p>
                     <p>Pauzeren met de X-knop (op de Meta Quest 2).</p>
                 </li>
             </ul>
-
-            <p>Een speelronde duurt maximaal twee minuten, wat goed werkt voor snelle opeenvolgende pogingen. </p>
+            
         </section>
 
         <!-- Hoe veel interviews, tests/testpersonen etc. -->
@@ -92,7 +97,9 @@
             <h3>Iteratief testen</h3>
 
             <p>In de vroege tests bleek dat de virtuele ruimte te klein aanvoelde, waardoor de targets te snel op de speler afkwamen. Ook waren de spelers verward over of ze gewonnen of verloren hadden.</p>
+            <br>
             <p>Dit leidde tot het inzetten van audio-cues en gedragsdiversiteit van targets. Elk succesvol schot geeft direct auditieve bevestiging en zijn er duidelijke geluidseffecten en UI-schermen toegevoegd voor winst en verlies. </p>
+            <br>
             <p>Om te zorgen dat het spel spannend blijft, heeft ieder target een uniek gedrag. Sommige rennen snel, een ander schiet pijlen. Specifieke karakters voeren eerst een animatie uit, zoals van een verdieping afspringen. </p>
         </section>
 
@@ -100,6 +107,7 @@
             <h3>Development</h3>
 
             <p>Het spel bevat 6 actieve targets (plus een tutorial-target genaamd Roberto). Om ervoor te zorgen dat geen enkele sessie identiek is, krijgen de targets een startvertraging toegewezen uit een willekeurige lijst met delays. Zodra de vertraging voorbij is, wordt de mesh van het target zichtbaar en begint de bewegingslogica.</p>
+            <br>
             <p>Zodra een target of een pijl de speler raakt, worden de targets vernietigd en verschijnt er een verlies-UI. Als de speler alle targets heeft uitgeschakeld, wordt de win-UI geactiveerd.</p>
         </section>
 
