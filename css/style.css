@@ -10,11 +10,9 @@
 
 :root {
     --header-color: #F2F2F2;
-    --header-hover: #;
     --highlight: #748C6D;
 
     --main-color: #F2F2F2;
-    --main-hover: #;
     
     --background-color: #261711;
 
@@ -22,6 +20,10 @@
 
     --figcaption-a:#748C6D;
     --figcaption-a-hover: #72655F;
+
+    --contact-background: #748C6D;
+    --contact-text: #F2F2F2;
+    --contact-background-hover: #72655F;
 
 }
 
@@ -168,6 +170,17 @@ header nav ul a, header nav button {
     
     filter:
     drop-shadow(0 3px 3px #3333336a);
+
+    transition: .2s ease;
+
+    cursor: pointer;
+
+
+}
+
+.button-container:hover {
+    background-color: var(--figcaption-a-hover);
+
 }
 
 
@@ -232,6 +245,28 @@ blockquote {
 
     font-style: italic;
     font-size: 25px;
+}
+
+
+.contactknop {
+    font-family: "Montella";
+
+    display: inline-block;
+    
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 36px;
+
+    color: var(--contact-text);
+    background-color: var(--contact-background);
+
+    transition: .2s ease;
+}
+
+.contactknop:hover {
+   background-color: var(--contact-background-hover); 
+
+   /* transition: .2s linear; */
 }
 
 
